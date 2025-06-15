@@ -12,7 +12,6 @@ public class RedisTests {
     @Autowired
     private RedisTemplate redisTemplate;
 
-    @Disabled
     @Test
     void testSendMail(){
         redisTemplate.opsForValue().set("email","ayamsrivastava1.21@gmail.com");

@@ -26,7 +26,6 @@ public class UserServiceTests {
         assertTrue(userService.saveNewUser(user));
     }
 
-    @Disabled
     @ParameterizedTest
     @CsvSource({
             "1,1,2",
