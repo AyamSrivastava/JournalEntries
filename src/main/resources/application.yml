@@ -1,19 +1,19 @@
 spring:
   redis:
-    host: ${REDIS_HOST}
-    port: ${REDIS_PORT}
-    password: ${REDIS_PASSWORD}
+    host: redis-16043.crce182.ap-south-1-1.ec2.redns.redis-cloud.com
+    port: 16043
+    password: n8zdTsbD6Mld8CM1lFszdJZznKe5ehVE
   data:
     mongodb:
-      uri: ${MONGO_URI}
-      database: ${MONGO_DB}
+      uri: mongodb+srv://ayamsrivastava120:97TlbPXTEwB2W4Gd@cluster0.mg63obc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: journaldb
       auto-index-creation:
 
   mail:
     host: smtp.gmail.com
     port: 587
-    username: ${MAIL_USERNAME}
-    password: ${MAIL_PASSWORD}
+    username: ayamsrivastava1.21@gmail.com
+    password: gthw xnhj spch kfbc
     properties:
       mail:
         smtp:
@@ -22,7 +22,7 @@ spring:
             enable: true
 
   kafka:
-    bootstrap-servers: ${KAFKA_BROKER}
+    bootstrap-servers: pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
@@ -35,7 +35,7 @@ spring:
     properties:
       security.protocol: SASL_SSL
       sasl.mechanism: PLAIN
-      sasl.jaas.config: ${KAFKA_JAAS_CONFIG}
+      sasl.jaas.config: "org.apache.kafka.common.security.plain.PlainLoginModule required username=\"KASJKGGOWVRYNRJ4\" password=\"NfPWL81CQTdCq+Q6u0kHly2XKv0ufwLkG5MtmW/hZwu8GOtlRbylkxUPLzrkt0cU\";"
       session.timeout.ms: 45000
 
 server:
@@ -45,4 +45,4 @@ server:
 
 weather:
   api:
-    key: ${WEATHER_API_KEY}
+    key: 7035d201cc2b6a801e8491140f20fb91
