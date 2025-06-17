@@ -12,7 +12,9 @@ target/
 .settings
 .springBeans
 .sts4-cache
-*.yml
+# Ignore other YAMLs but not Spring config
+# *.yml
+!src/main/resources/application.yml
 *.log
 ### IntelliJ IDEA ###
 .idea
