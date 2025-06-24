@@ -14,7 +14,7 @@ target/
 .sts4-cache
 # Ignore other YAMLs but not Spring config
 # *.yml
-!src/main/resources/application.yml
+src/main/resources/application-dev.yml
 *.log
 ### IntelliJ IDEA ###
 .idea
